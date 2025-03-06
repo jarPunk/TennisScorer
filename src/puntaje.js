@@ -7,6 +7,10 @@ function obtenerScore(score1,score2) {
     {
         return "30 - 0"
     }
+    if(score1 == 3 && score2 == 0)
+        {
+            return "40 - 0"
+        }
     return "love,love";
   }
   export default obtenerScore;
