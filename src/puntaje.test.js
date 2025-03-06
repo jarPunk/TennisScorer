@@ -6,5 +6,8 @@ it("en caso de que ambos jugadores tengas 0 el marcador es love love", () => {
   it("en caso de que el score1 este ganando con 15 - 0 ", () => {
     expect(obtenerScore(1,0)).toEqual("15 - 0");
   });
+  it("en caso de que el score1 este ganando con 30 - 0 ", () => {
+    expect(obtenerScore(2,0)).toEqual("30 - 0");
+  });
 });
 
