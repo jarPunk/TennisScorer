@@ -1,17 +1,9 @@
-function obtenerScore(score1,score2) {
-    if(score1 == 1 && score2 == 0)
-    {
-        return "15 - 0"
+function obtenerScore(score1, score2) {
+    const scores = ["0", "15", "30", "40"];
+    if (score1 === 0 && score2 === 0) {
+        return "love,love";
     }
-    if(score1 == 2 && score2 == 0)
-    {
-        return "30 - 0"
-    }
-    if(score1 == 3 && score2 == 0)
-        {
-            return "40 - 0"
-        }
-    return "love,love";
-  }
-  export default obtenerScore;
-  
+    return `${scores[score1] || "0"} - ${scores[score2] || "0"}`;
+}
+
+export default obtenerScore;
